@@ -1,0 +1,70 @@
+{
+  "timestamp": "2026-11-01T19:50:51.155708",
+  "dataset_path": "C:\\Users\\THARUN KUMAR\\OneDrive\\Desktop\\air quality\\data\\city_day.csv",
+  "train_samples": 19880,
+  "test_samples": 4970,
+  "feature_columns": [
+    "PM2.5",
+    "PM10",
+    "NO",
+    "NO2",
+    "NOx",
+    "NH3",
+    "CO",
+    "SO2",
+    "O3",
+    "Benzene",
+    "Toluene",
+    "Xylene"
+  ],
+  "classes": [
+    "Good",
+    "Satisfactory",
+    "Moderate",
+    "Poor",
+    "Very Poor",
+    "Severe"
+  ],
+  "best_model_name": "Random Forest",
+  "models_comparison": {
+    "Dummy Baseline": {
+      "cv_accuracy_mean": 0.35528169014084504,
+      "cv_accuracy_std": 0.00012321376975771276,
+      "cv_f1_macro_mean": 0.08738200195077832,
+      "cv_f1_macro_std": 2.2361193060841183e-05,
+      "cv_precision_macro_mean": 0.05921361502347418,
+      "cv_recall_macro_mean": 0.16666666666666666,
+      "test_accuracy": 0.3553319919517103,
+      "test_macro_precision": 0.05922199865861838,
+      "test_macro_recall": 0.16666666666666666,
+      "test_macro_f1": 0.08739113222486145,
+      "filename": "dummy_classifier.joblib"
+    },
+    "Logistic Regression": {
+      "cv_accuracy_mean": 0.7453722334004024,
+      "cv_accuracy_std": 0.004349288998232852,
+      "cv_f1_macro_mean": 0.6867028669555075,
+      "cv_f1_macro_std": 0.009875275299398424,
+      "cv_precision_macro_mean": 0.7411242345068982,
+      "cv_recall_macro_mean": 0.6588659558416412,
+      "test_accuracy": 0.7531187122736418,
+      "test_macro_precision": 0.7530295492357201,
+      "test_macro_recall": 0.6706179880531115,
+      "test_macro_f1": 0.7000015208735909,
+      "filename": "logistic_regression.joblib"
+    },
+    "Random Forest": {
+      "cv_accuracy_mean": 0.8036217303822937,
+      "cv_accuracy_std": 0.0059163996896064875,
+      "cv_f1_macro_mean": 0.7703563105754719,
+      "cv_f1_macro_std": 0.005291061636592989,
+      "cv_precision_macro_mean": 0.7991185716208635,
+      "cv_recall_macro_mean": 0.7496468523241296,
+      "test_accuracy": 0.814486921529175,
+      "test_macro_precision": 0.8135955918752741,
+      "test_macro_recall": 0.7687322062647937,
+      "test_macro_f1": 0.7880284039579183,
+      "filename": "random_forest.joblib"
+    }
+  }
+}

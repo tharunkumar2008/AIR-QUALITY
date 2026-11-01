@@ -1,0 +1,108 @@
+{
+  "dataset_name": "CPCB Indian Air Quality Dataset (City-Day)",
+  "origin_agency": "Central Pollution Control Board (CPCB), Ministry of Environment, Forest and Climate Change, Government of India",
+  "portal_reference": "National Air Quality Index (NAQI) Monitoring Network (https://app.cpcbccr.com/ccr/#/caaqm-dashboard-all/caaqm-landing)",
+  "archived_repository": "Open Government Data (OGD) Platform India / Public Academic Air Quality Repository",
+  "collection_locations": "26 major Indian urban centers including Delhi, Ahmedabad, Bengaluru, Mumbai, Chennai, Kolkata, Hyderabad, Lucknow, Patna, Jaipur, etc.",
+  "time_range": "2015-01-01 to 2020-07-01",
+  "total_records": 29531,
+  "pollutants": {
+    "PM2.5": {
+      "name": "Fine Particulate Matter (diameter <= 2.5 micrometers)",
+      "unit": "ug/m3",
+      "averaging_time": "24-hour",
+      "cpcb_standard_annual": 40.0,
+      "cpcb_standard_24h": 60.0
+    },
+    "PM10": {
+      "name": "Respirable Suspended Particulate Matter (diameter <= 10 micrometers)",
+      "unit": "ug/m3",
+      "averaging_time": "24-hour",
+      "cpcb_standard_annual": 60.0,
+      "cpcb_standard_24h": 100.0
+    },
+    "NO": {
+      "name": "Nitric Oxide",
+      "unit": "ug/m3",
+      "averaging_time": "24-hour"
+    },
+    "NO2": {
+      "name": "Nitrogen Dioxide",
+      "unit": "ug/m3",
+      "averaging_time": "24-hour",
+      "cpcb_standard_annual": 40.0,
+      "cpcb_standard_24h": 80.0
+    },
+    "NOx": {
+      "name": "Total Reactive Nitrogen Oxides",
+      "unit": "ppb",
+      "averaging_time": "24-hour"
+    },
+    "NH3": {
+      "name": "Ammonia",
+      "unit": "ug/m3",
+      "averaging_time": "24-hour",
+      "cpcb_standard_annual": 100.0,
+      "cpcb_standard_24h": 400.0
+    },
+    "CO": {
+      "name": "Carbon Monoxide",
+      "unit": "mg/m3",
+      "averaging_time": "8-hour / 24-hour",
+      "cpcb_standard_8h": 2.0,
+      "cpcb_standard_1h": 4.0
+    },
+    "SO2": {
+      "name": "Sulphur Dioxide",
+      "unit": "ug/m3",
+      "averaging_time": "24-hour",
+      "cpcb_standard_annual": 50.0,
+      "cpcb_standard_24h": 80.0
+    },
+    "O3": {
+      "name": "Ozone",
+      "unit": "ug/m3",
+      "averaging_time": "8-hour",
+      "cpcb_standard_8h": 100.0,
+      "cpcb_standard_1h": 180.0
+    },
+    "Benzene": {
+      "name": "Benzene (C6H6)",
+      "unit": "ug/m3",
+      "averaging_time": "Annual",
+      "cpcb_standard_annual": 5.0
+    },
+    "Toluene": {
+      "name": "Toluene (C7H8)",
+      "unit": "ug/m3",
+      "averaging_time": "24-hour"
+    },
+    "Xylene": {
+      "name": "Xylene (C8H10)",
+      "unit": "ug/m3",
+      "averaging_time": "24-hour"
+    }
+  },
+  "target_variable": {
+    "name": "AQI_Bucket",
+    "numeric_aqi_column": "AQI",
+    "classes": [
+      "Good",
+      "Satisfactory",
+      "Moderate",
+      "Poor",
+      "Very Poor",
+      "Severe"
+    ],
+    "cpcb_breakpoints": {
+      "Good": "0 - 50",
+      "Satisfactory": "51 - 100",
+      "Moderate": "101 - 200",
+      "Poor": "201 - 300",
+      "Very Poor": "301 - 400",
+      "Severe": "401 - 500+"
+    }
+  },
+  "license": "National Data Sharing and Accessibility Policy (NDSAP) / Open Government Data License India (OGD-India)",
+  "usage_terms": "Non-commercial educational and research prototype. Not certified for emergency medical or regulatory enforcement decisions."
+}

@@ -1,0 +1,29 @@
+{
+  "Dummy Baseline": {
+    "accuracy": 0.3553,
+    "macro_precision": 0.0592,
+    "macro_recall": 0.1667,
+    "macro_f1": 0.0874,
+    "weighted_precision": 0.1263,
+    "weighted_recall": 0.3553,
+    "weighted_f1": 0.1863
+  },
+  "Logistic Regression": {
+    "accuracy": 0.7531,
+    "macro_precision": 0.753,
+    "macro_recall": 0.6706,
+    "macro_f1": 0.7,
+    "weighted_precision": 0.7508,
+    "weighted_recall": 0.7531,
+    "weighted_f1": 0.7467
+  },
+  "Random Forest": {
+    "accuracy": 0.8145,
+    "macro_precision": 0.8136,
+    "macro_recall": 0.7687,
+    "macro_f1": 0.788,
+    "weighted_precision": 0.8138,
+    "weighted_recall": 0.8145,
+    "weighted_f1": 0.8128
+  }
+}
